@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Catalogue - Online Book Store</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: darkblue;
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .logo-college {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    header img {
+        height: 50px;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    nav.top-nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav.top-nav a:hover {
+        text-decoration: underline;
+    }
+    main {
+        padding: 30px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    h2 {
+        color: darkblue;
+        margin-bottom: 20px;
+    }
+    .book-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        gap: 20px;
+    }
+    .book-item {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .book-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #003366;
+    }
+    .book-author {
+        font-style: italic;
+        margin-bottom: 12px;
+        color: #555;
+    }
+    .book-price {
+        font-weight: bold;
+        color: #006600;
+        font-size: 16px;
+        margin-top: auto;
+    }
+</style>
+</head>
+<body>
+<header>
+    <div class="logo-college">
+        <img src="https://galgotiacollege.edu//public/uploads/all/3106/phelosophy.jpeg" />
+        <h1>GCET College Online Book Store</h1>
+    </div>
+    <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+        <a href="catalogue.html">Catalogue</a>
+    </nav>
+</header>
+<main>
+    <h2>Book Catalogue</h2>
+    <div class="book-list">
+        <div class="book-item">
+            <div class="book-title">Introduction to Python</div>
+            <div class="book-author">By RAMANUJAN</div>
+            <div class="book-price">RS 100</div>
+        </div>
+        <div class="book-item">
+            <div class="book-title">Data Structures & Algorithms</div>
+            <div class="book-author">By Jane Doe</div>
+            <div class="book-price">RS 150</div>
+        </div>
+        <div class="book-item">
+            <div class="book-title">Web Development Essentials</div>
+            <div class="book-author">By SHREEDHARACHARYA</div>
+            <div class="book-price">RS 50</div>
+        </div>
+        <div class="book-item">
+            <div class="book-title">Machine Learning Basics</div>
+            <div class="book-author">By Maria Lee</div>
+            <div class="book-price">RS 75</div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

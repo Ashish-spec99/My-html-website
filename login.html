@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login - Online Book Store</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .login-container {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        width: 350px;
+        text-align: center;
+    }
+    .login-container img {
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    .login-container h1 {
+        margin: 0 0 20px;
+        font-size: 24px;
+        color: #003366;
+    }
+    form {
+        text-align: left;
+    }
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #003366;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #002244;
+    }
+    .links {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .links a {
+        color: #003366;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 14px;
+    }
+    .links a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://galgotiacollege.edu//public/uploads/all/3106/phelosophy.jpeg" />
+        <h1>GCET College Book Store Login</h1>
+        <form action="#" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter username" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required />
+
+            <button type="submit">Login</button>
+        </form>
+        <div class="links">
+            <a href="registration.html">Register</a> |
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+</body>
+</html>
